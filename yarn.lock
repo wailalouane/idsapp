@@ -2157,6 +2157,49 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
+"@syncfusion/ej2-base@~20.3.56":
+  version "20.3.56"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-base/-/ej2-base-20.3.56.tgz#96ed9028816f4892a3f2a2eb9cb1009a9bcfde31"
+  integrity sha512-BeXX3XBOs1kv9/rki9f1kPuLbNJU06kJE8o0jLY62fEd/U5k2KkuG5Z/WbWHJIuQVH5dv57ZM2Adl3rG+vkvjg==
+  dependencies:
+    "@syncfusion/ej2-icons" "~20.3.56"
+
+"@syncfusion/ej2-buttons@~20.3.57":
+  version "20.3.57"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-buttons/-/ej2-buttons-20.3.57.tgz#14f5a44534f7830b0477b62d1560e6b40a794cff"
+  integrity sha512-KkJTdhXAF9gdz/kIfmn25T2aJYJh5EYqcgLsn09U9xLsGQ/jQ1ZQO/OGujTkxj3UZURRRxnnJT/S9RO4umb3Gw==
+  dependencies:
+    "@syncfusion/ej2-base" "~20.3.56"
+
+"@syncfusion/ej2-icons@~20.3.56":
+  version "20.3.56"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-icons/-/ej2-icons-20.3.56.tgz#c7ec76c8d8cbfb80ca1d3ba1258c66bef75355aa"
+  integrity sha512-sv5y/J85PZU8fmFNG1b5ftLroQHFicTKcfKo0oy72KSKxdLZ3xd1pjMS9/5m5z609doksIbFltlisO0buhzflA==
+
+"@syncfusion/ej2-popups@20.3.57":
+  version "20.3.57"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-popups/-/ej2-popups-20.3.57.tgz#fcf611b18a157a727f677d65ce4b5155ddaa86b1"
+  integrity sha512-BO5jd6psxtUReJxaBRVZM4rHrlO7x1Y7zzC5S0Xho805mv/I4ioLrzoXXrbVXd/sXZCCLAM4wR4ndtog08JY3Q==
+  dependencies:
+    "@syncfusion/ej2-base" "~20.3.56"
+    "@syncfusion/ej2-buttons" "~20.3.57"
+
+"@syncfusion/ej2-react-base@~20.3.56":
+  version "20.3.56"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-base/-/ej2-react-base-20.3.56.tgz#0a52b6e0157469d4ca304c60496c5cd31b5bac62"
+  integrity sha512-8QuQbbjjodEyMjhrWg4GthOJXMpyLMdr37oKqo6Wd3L4UzWO0T5fLquII4HLyTSzeeRESWn7ByJWGEOxYycHmQ==
+  dependencies:
+    "@syncfusion/ej2-base" "~20.3.56"
+
+"@syncfusion/ej2-react-popups@^20.3.57":
+  version "20.3.57"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-popups/-/ej2-react-popups-20.3.57.tgz#b3051d9a7f19bc74bb4c39122b8eab3265e60500"
+  integrity sha512-BEMpayhQxSwTGH6DKuQcG4Yt98qfd0vWoYffurnm+2zXeq6HHxX3yQz7lBRe4/S5S9UV3vUarnwk5qeOkqaINw==
+  dependencies:
+    "@syncfusion/ej2-base" "~20.3.56"
+    "@syncfusion/ej2-popups" "20.3.57"
+    "@syncfusion/ej2-react-base" "~20.3.56"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -7753,6 +7796,11 @@ react-fast-compare@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+
+react-icons@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
+  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
