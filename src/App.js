@@ -8,8 +8,8 @@ import { Navbar, SideBar } from './components';
 import { Ecommerce,  Calender, Employes, Stacked, Pyramid, Costumers, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import {useStateContext} from './contexts/ContextProvider';
 function App() {
-  //const {activeMenu} =useStateContext();
-  const activeMenu =true;
+  const {activeMenu} =useStateContext();
+  //const activeMenu =true;
   
   return (
     <div>
