@@ -44,7 +44,7 @@ function App() {
 
           </div>
 
-        </div>
+        
         <div>
         <Routes>
                 {/* dashboard  */}
@@ -75,6 +75,7 @@ function App() {
               </Routes>
         
           
+        </div>
         </div>
         </div>
       </BrowserRouter>
