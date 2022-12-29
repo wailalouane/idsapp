@@ -1,7 +1,7 @@
 const Employes = () => {
     return ( 
-        <div>
-            Empls
+        <div className="bg-white">
+             HEloo 
         </div>
      );
 }

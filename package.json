@@ -19,6 +19,7 @@
     "@syncfusion/ej2-react-calendars": "^20.3.56",
     "@syncfusion/ej2-react-charts": "^20.3.57",
     "@syncfusion/ej2-react-dropdowns": "^20.3.57",
+    "@syncfusion/ej2-react-grids": "^20.4.38",
     "@syncfusion/ej2-react-inputs": "^20.3.57",
     "@syncfusion/ej2-react-popups": "^20.3.57",
     "@syncfusion/ej2-react-richtexteditor": "^20.3.56",
