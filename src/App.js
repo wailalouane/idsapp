@@ -60,7 +60,7 @@ function App() {
                 {/* apps  */}
                 
                 <Route path="/editor" element={<Editor />} />
-                <Route path="/calender" element={<Calender />} />
+                <Route path="/Calendar" element={<Calender />} />
                 <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* charts  */}
