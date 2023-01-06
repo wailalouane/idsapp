@@ -5,7 +5,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 import background from "../data/bgsec.jpg";
 
 
-const Ecommerce = () => {
+const Home = () => {
     return (
         <div className='mt-12'>
             <div className='flex flex-wrap lg:flex-nowrap justify-center'>
@@ -20,10 +20,10 @@ const Ecommerce = () => {
                     <div className='flex justify-between items-center'>
                         <div>
                             <p className='font-bold text-gray-400'>
-                                Attacks this mounth
+                                Events Over time
                             </p>
-                            <p className='text-2xl'>
-                                1200 Attack
+                            <p className='text-2xl font-semibold'>
+                                ...
                             </p>
                         </div>
                     </div>
@@ -69,15 +69,14 @@ const Ecommerce = () => {
                 <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780'>
                     <div className='flex justify-between'>
                         <p className='font-semibold text-xl '>
-                            Revenue Updates
-
+                            Events Over Time
                         </p>
                         <div className='flex items-center gap-4'>
                             <p className='flex items-center gap-2 text-gray-600 hover:drop-shadow-xl'>
-                                <span>Expense</span>
+                                <span>Alerts</span>
                             </p>
                             <p className='flex items-center gap-2 text-green-400 hover:drop-shadow-xl'>
-                                <span>Budjet</span>
+                                <span>Fake</span>
                             </p>
                         </div>
 
@@ -91,7 +90,7 @@ const Ecommerce = () => {
                                     currentColor='blue'
 
                                     type='Line'
-                                    height='80px'
+                                    height='360px'
                                     width='250px'
                                     data={SparklineAreaData}
                                     color='blue'
@@ -124,4 +123,4 @@ const Ecommerce = () => {
     );
 }
 
-export default Ecommerce
+export default Home;

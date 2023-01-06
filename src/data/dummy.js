@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiFillHome, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiFillAlert, AiFillWarning, AiFillBuild } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft, BsFillInboxesFill } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
@@ -509,30 +509,23 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: 'Main',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'Home',
+        icon: <AiFillHome />,
       },
     ],
   },
 
   {
-    title: 'Pages',
+    title: 'Inforamtion',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'Alerts',
+        icon: <AiFillAlert />,
       },
-      {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
+      
     ],
   },
   {
@@ -542,18 +535,7 @@ export const links = [
         name: 'calendar',
         icon: <AiOutlineCalendar />,
       },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
+      
     ],
   },
   {
@@ -653,30 +635,30 @@ export const chatData = [
 
 export const earningData = [
   {
-    icon: <BsFillInboxesFill />,
+    icon: <AiFillAlert />,
     amount: '4,396',
     percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(31, 34, 53)',
+    title: 'Alert',
+    iconColor: 'rgb(252, 3, 3)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
   },
   {
-    icon: <MdOutlineSupervisorAccount />,
+    icon: <AiFillBuild />,
     amount: '39,354',
     percentage: '-4%',
-    title: 'Customers',
-    iconColor: '#03C9D7',
+    title: 'Critical',
+    iconColor: '#fc8c03',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
 
   {
-    icon: <FiBarChart />,
+    icon: <AiFillWarning />,
     amount: '423,39',
     percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
+    title: 'Warning',
+    iconColor: '#160be3',
     iconBg: 'rgb(255, 244, 229)',
 
     pcColor: 'green-600',
@@ -685,7 +667,7 @@ export const earningData = [
     icon: <HiOutlineRefresh />,
     amount: '39,354',
     percentage: '-12%',
-    title: 'Refunds',
+    title: 'Others',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -3127,11 +3109,16 @@ export const SparklineAreaData = [
   { x: 2, yval: 6 },
   { x: 3, yval: 10 },
   { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
-  { x: 3, yval: 10 },
-  { x: 4, yval: 5 },
-  { x: 3, yval: 10 },
-  { x: 4, yval: 5 },
+  { x: 5, yval: 18 },
+  { x: 6, yval: 2},
+  { x: 7, yval: 5 },
+  { x: 8, yval: 10 },
+  { x: 9, yval: 5 },
+  { x: 10, yval: 6 },
+  { x: 11, yval: 2},
+  { x: 12, yval: 5 },
+  { x: 13, yval: 3 },
+  { x: 14, yval: 5 },
     
 ];
 
@@ -3231,7 +3218,7 @@ export const stackedCustomSeries = [
     dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Alerts',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3241,7 +3228,7 @@ export const stackedCustomSeries = [
     dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Fake',
     type: 'StackingColumn',
     background: 'red',
 

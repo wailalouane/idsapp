@@ -16,7 +16,7 @@ const Stacked = ({width, height}) => {
             <SeriesCollectionDirective>
                 {stackedCustomSeries.map((item, index) => <SeriesDirective key={index}{...item}/>)}
             </SeriesCollectionDirective>
-        </ChartComponent>
+        </ChartComponent>   
      );
 }
  
