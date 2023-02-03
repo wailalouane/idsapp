@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import{TooltipComponent} from '@syncfusion/ej2-react-popups'
 import { Navbar, SideBar } from './components';
-import {Alerts,  Calender, Employes, Stacked, Pyramid, Costumers, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Home } from './pages';
+import {Alerts,  Calender, Stacked, Pyramid, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Home } from './pages';
 import {useStateContext} from './contexts/ContextProvider';
 function App() {
   const {activeMenu} =useStateContext();
@@ -54,14 +54,12 @@ function App() {
 
                 {/* pages  */}
                 
-                <Route path="/employees" element={<Employes />} />
-                <Route path="/costumers" element={<Costumers />} />
 
                 {/* apps  */}
                 
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/Calendar" element={<Calender />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                
 
                 {/* charts  */}
                 <Route path="/line" element={<Line />} />

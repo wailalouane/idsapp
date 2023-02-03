@@ -21,7 +21,7 @@ const Alerts = () => {
         <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl'>
             <Header category="Page" title="Alerts"/>
             {data.length > 0 ?(
-                    <GridComponent dataSource={ordersData} allowPaging allowSorting toolbar={['Search']}>
+                    <GridComponent dataSource={data} allowPaging allowSorting toolbar={['Search']}>
                     <ColumnsDirective>
                     {ordersGrid.map((item,index)=>(<ColumnDirective key={index} field={item.field} headerText={item.headerText} format={item.format} textAlign= {item.textAlign}  width= {item.width} editType= {item.editType  }/>))}
                     

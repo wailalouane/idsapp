@@ -1,5 +1,6 @@
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, Tooltip, LineSeries } from "@syncfusion/ej2-react-charts";
 import { lineCustomSeries, LinePrimaryYAxis, LinePrimaryXAxis } from "../../data/dummy";
+
 const LineChats = () => {
     return ( 
         <ChartComponent

@@ -1,10 +1,10 @@
 export { default as Home } from './Home';
 export { default as Alerts } from './Alerts';
 
-export { default as Employes } from './Employes';
+
 export { default as Editor } from './Editor';
-export { default as Costumers } from './Costumers';
-export { default as ColorPicker } from './ColorPicker';
+
+
 export { default as Calender } from './Calender';
 export { default as Area } from './Charts/Area';
 export { default as Bar } from './Charts/Bar';
