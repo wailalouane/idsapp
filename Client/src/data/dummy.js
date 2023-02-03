@@ -638,7 +638,7 @@ export const earningData = [
     icon: <AiFillAlert />,
     amount: '4,396',
     percentage: '+23%',
-    title: 'Alert',
+    title: 'Alerttt',
     iconColor: 'rgb(252, 3, 3)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
@@ -3202,7 +3202,7 @@ export const stackedChartData = [
     { x: 'July', y: 159.9 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
+    { x: 'Jan', y: 0 },
     { x: 'Feb', y: 127.3 },
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },

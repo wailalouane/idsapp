@@ -1,6 +1,7 @@
 import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
 import { SparklineComponent, Inject, SparklineTooltip } from "@syncfusion/ej2-react-charts";
-import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { earningData } from '../data/somedata';
 import { useStateContext } from '../contexts/ContextProvider';
 import background from "../data/bgsec.jpg";
 
