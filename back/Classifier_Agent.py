@@ -9,6 +9,9 @@ def Classification(paquet) :
 
 path = os.path.join(sys.path[0])
 pickled_model = pickle.load(open(path+'../model.pkl', 'rb'))
+
+
+#just for test
 test = pd.read_csv('../test_validation.csv')
 test.drop(['Unnamed: 0'], axis=1, inplace=True)
 
