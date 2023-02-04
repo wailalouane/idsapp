@@ -20,14 +20,19 @@ const primaryyAxis = {
 const Bar = () => {
     const [data, setData] =useState([]);
     useEffect(()=>{
-        fetch("/proto").then(
-            res=>res.json()
-        ).then(
-            data => {
-                setData(data)
-            }
-        )
-    },[])
+        const sse= new EventSource('/protocoles')
+        function handleStream(e){
+            setData (e.data)
+        }
+        sse.onmessage=e=>{handleStream(e)}
+
+        sse.onerror=e=>{
+            sse.close()
+        }
+        return ()=>{
+            sse.close()
+        }
+    },)
 
     return ( 
         <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl'>

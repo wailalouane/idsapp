@@ -8,14 +8,20 @@ import { useEffect, useState } from "react";
 const Alerts = () => {
     const [data, setData] =useState([]);
     useEffect(()=>{
-        fetch("/Aletrs").then(
-            res=>res.json()
-        ).then(
-            data => {
-                setData(data)
-            }
-        )
-    },[])
+        const sse= new EventSource('/alertsTable')
+        function handleStream(e){
+            
+            setData (e.data)
+        }
+        sse.onmessage=e=>{handleStream(e)}
+
+        sse.onerror=e=>{
+            sse.close()
+        }
+        return ()=>{
+            sse.close()
+        }
+    },)
     return ( 
         
         <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl'>

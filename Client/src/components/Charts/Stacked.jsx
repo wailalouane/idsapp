@@ -5,14 +5,20 @@ import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from ".
 const Stacked = ({width, height}) => {
     const [data, setData] =useState([]);
     useEffect(()=>{
-        fetch("/protocols").then(
-            res=>res.json()
-        ).then(
-            data => {
-                setData(data)
-            }
-        )
-    },[])
+        const sse= new EventSource('/protocols')
+        function handleStream(e){
+            
+            setData (e.data)
+        }
+        sse.onmessage=e=>{handleStream(e)}
+
+        sse.onerror=e=>{
+            sse.close()
+        }
+        return ()=>{
+            sse.close()
+        }
+    },)
 
     return ( 
         <ChartComponent
