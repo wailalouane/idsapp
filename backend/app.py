@@ -1,7 +1,9 @@
 from flask import Flask, Response, json
 import time
 import pandas as pd
+from flask_cors import CORS
 # from agents import bar_chart1, alerts_table2,  pie_chart3, bar_chart4
+
 
 DELAY = 5
 
@@ -30,7 +32,7 @@ bar_chart4 = []
 i = 0
 
 app = Flask(__name__)
-
+cors = CORS(app, resources={r"/api/*": {"origins":[ "http://localhost:3000"]}})
 
 def update_attack(attack):
     global total_DOS, total_R2L, total_U2R, total_PROBE, total_PP, total_ICMP, total_IP, total_TCP, total_UDP
