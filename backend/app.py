@@ -1,6 +1,5 @@
 from flask import Flask, Response, json
 import time
-from server import total_attacks, total_normal
 import pandas as pd
 
 DELAY = 5
@@ -17,7 +16,7 @@ service_per_attack = {
     'u2r':  53,
     'probe':  46
 }
-total_attacks = 0 
+total_attacks = 0
 total_normal = 0
 total_DOS, total_R2L, total_U2R, total_PROBE = 0, 0, 0, 0
 total_ICMP, total_UDP, total_TCP, total_IP, total_PP = 0, 0, 0, 0, 0
@@ -27,7 +26,7 @@ alerts_table2 = []
 pie_chart3 = []
 bar_chart4 = []
 
-i = 0 
+i = 0
 
 app = Flask(__name__)
 
@@ -80,7 +79,7 @@ def update_data():
             {"AttackType": "Probe", "ProtocolType": 'UDP', "Services": service_per_attack['probe'], "Type": "Attack", "NumPacket": total_PROBE}
         ]
     pie_chart3 = [
-        {"x": "Attack","y": total_attacks}, 
+        {"x": "Attack","y": total_attacks},
         {"x": "Normal","y": total_normal}
         ]
     bar_chart4 = [
@@ -109,12 +108,12 @@ def index():
             else:
                 # increment attacks
                 total_attacks = total_attacks + 1
-                # update 
+                # update
                 update_attack(type)
                 update_data()
             i=i+1
             yield json.dumps([bar_chart1, alerts_table2, pie_chart3, bar_chart4])
-    
+
     return Response(get_data(), mimetype="application/json")
 
 
