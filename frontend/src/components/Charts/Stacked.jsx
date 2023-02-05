@@ -9,19 +9,25 @@ const Stacked = ({width, height}) => {
 
     useEffect(()=>{
         const sse= new EventSource('http://localhost:5000/')
-        function handleStream(e){
+        console.log('okkkk')
+        function handleStream(data1){
             
-            setData (e.data)
+            setData (data1)
+            console.log(data)
         }
-        sse.onmessage=e=>{handleStream(e)}
+        sse.onmessage=e=>{
+            console.log("was heere")
+            handleStream(JSON.parse(e.data))
+        }
 
         sse.onerror=e=>{
+            console.log('ssomething')
             sse.close()
         }
         return ()=>{
             sse.close()
         }
-    },)
+    },[])
     
     return ( 
         <ChartComponent
