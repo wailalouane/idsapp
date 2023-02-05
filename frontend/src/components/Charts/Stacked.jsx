@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 
 import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from "../../data/somedata";
 const Stacked = ({width, height}) => {
-    const [data, setData] =useState([]);
+    const [data, setData] =useState([[],[],[],[]]);
+    
+    
+
     useEffect(()=>{
-        const sse= new EventSource('/protocols')
+        const sse= new EventSource('http://localhost:5000/')
         function handleStream(e){
             
             setData (e.data)
@@ -19,7 +22,7 @@ const Stacked = ({width, height}) => {
             sse.close()
         }
     },)
-
+    
     return ( 
         <ChartComponent
         width={width}
@@ -33,8 +36,8 @@ const Stacked = ({width, height}) => {
         >
             <Inject services={[Legend, Category, StackingColumnSeries, Tooltip]}/>
             <SeriesCollectionDirective>
-                {data.length > 0 ?(
-                    data.map((item, index) => <SeriesDirective key={index}{...item}/>)
+                {data[0].length > 0 ?(
+                    data[0].map((item, index) => <SeriesDirective key={index}{...item}/>)
                 ):(
                     
                     stackedCustomSeries.map((item, index) => <SeriesDirective key={index}{...item}/>)

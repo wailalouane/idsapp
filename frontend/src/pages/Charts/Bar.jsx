@@ -42,7 +42,7 @@ const Bar = () => {
             <Inject services={[ColumnSeries, Legend, Tooltip, DataLabel, Category]} />
               <SeriesCollectionDirective>
                {data.length > 0 ?(
-                    <SeriesDirective dataSource={data} xName='country' yName='protocol' name='Protocol' type='Column' />
+                    <SeriesDirective dataSource={columnData} xName='country' yName='protocol' name='Protocol' type='Column' />
                 ):(
                     <SeriesDirective dataSource={columnData} xName='country' yName='protocol' name='Protocol' type='Column' />
                     )}

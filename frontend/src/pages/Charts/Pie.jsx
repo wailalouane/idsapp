@@ -33,7 +33,7 @@ const Pie = () => {
             <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]}/>
             <AccumulationSeriesCollectionDirective>
                 {data.length > 0 ?(
-                    <AccumulationSeriesDirective dataSource={data} xName='x' yName='y' innerRadius='20%' dataLabel={{
+                    <AccumulationSeriesDirective dataSource={variouspiedata} xName='x' yName='y' innerRadius='20%' dataLabel={{
                          visible: true, position: 'Outside', name: 'x'
                            }} radius='r'>
                           </AccumulationSeriesDirective>

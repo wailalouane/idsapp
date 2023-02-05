@@ -98,3 +98,39 @@ const variouspiedata = [
     { country: 'IP', protocol: 27},
     { country: 'PP', protocol: 12},
   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  useEffect(() => {
+        const interv=setInterval(nigga, 1000);
+        nigga()
+
+        function nigga(){
+            fetch('http://localhost:5000/').then(
+                res => res.json()
+                ).then(
+                    data=>{
+                        setData(data);
+                        console.log(data)
+                    }
+            )
+        }
+
+        return ()=>{
+            clearInterval(interv);
+
+        }
+      }, []);
